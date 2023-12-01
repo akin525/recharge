@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>Yellow Man Telecoms </title>
+  <title>Rechargestations </title>
   <meta content="Rechargestation | Buy data in a few clicks to keep surfing the internet. You can buy whatever size of data plan for whichever network you desire. All plans are topped-up to your specified number in seconds." name="description">
   <meta content="" name="keywords">
 
@@ -111,7 +111,7 @@
             <div class="content pt-4 pt-lg-0">
               <h3>More About Us</h3>
               <p class="fst-italic">
-                With Yellow Man Telecoms, you can purchase your airtime, data, electricity bills and TV subscription with just the click of a button, all by yourself, seamlessly and without stress. We operate a 24/7 days support system with prompt response to any complains or suggestion from our esteemed clients.
+                With Rechargestations, you can purchase your airtime, data, electricity bills and TV subscription with just the click of a button, all by yourself, seamlessly and without stress. We operate a 24/7 days support system with prompt response to any complains or suggestion from our esteemed clients.
               </p>
               <ul>
                 <li><i class="bi bi-check-circle"></i>We're Fast</li>
@@ -211,7 +211,7 @@
                 Buy Data
 
 
-                Making an online recharge has become very easy and safe on Yellow Man Telecoms....
+                Making an online recharge has become very easy and safe on Rechargestations....
               </p>
             </div>
           </div>
@@ -437,7 +437,7 @@
           </li>
 
           <li>
-            <div data-bs-toggle="collapse" href="#faq4" class="collapsed question">What are the services available on the Yellow Man Telecoms? <i class="bi bi-chevron-down icon-show"></i><i class="bi bi-chevron-up icon-close"></i></div>
+            <div data-bs-toggle="collapse" href="#faq4" class="collapsed question">What are the services available on the Rechargestations? <i class="bi bi-chevron-down icon-show"></i><i class="bi bi-chevron-up icon-close"></i></div>
             <div id="faq4" class="collapse" data-bs-parent=".faq-list">
               <p>
               <h4>Airtime VTU </h4>
@@ -596,7 +596,7 @@
 
           <div class="col-lg-4 col-md-6 footer-newsletter">
             <h4>Join Our Platform</h4>
-            <p>Join our network of outstanding entrepreneurs patnering with Yellow Man Telecoms</p>
+            <p>Join our network of outstanding entrepreneurs patnering with Rechargestations</p>
             <form action="" method="post">
               <input type="email" name="email"><input type="submit" value="Subscribe">
             </form>
