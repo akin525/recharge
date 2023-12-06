@@ -70,7 +70,7 @@
                             @else
                                 <h6 class='text-white'>{{Auth::user()->account_name}}</h6>
                                 <h5 class='text-white'>Account No:{{Auth::user()->account_number}}</h5>
-                                <h6 class='text-white'>WEMA-BANK</h6>
+                                <h6 class='text-white'>Bank:{{Auth::user()->bank}}</h6>
                             @endif
 
                     </li>
