@@ -18,6 +18,7 @@ use App\Models\bo;
 use App\Models\data;
 use App\Models\deposit;
 use Illuminate\Support\Facades\DB;
+use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\Mail;
 use RealRashid\SweetAlert\Facades\Alert;
 
@@ -50,19 +51,18 @@ class AuthController
     }elseif ($user->email == $request->email){
         $new= uniqid('Pass',true);
 
-        $user->password=$new;
+        $user->password=Hash::make($new);
         $user->save();
 
-        $admin= 'admin@primedata.com.ng';
-        $admin1= 'primedata18@gmail.com';
+        $admin= 'info@rechargestation.com.ng';
 
         $receiver= $user->email;
-//        Mail::to($receiver)->send(new Emailpass($new));
-//        Mail::to($admin)->send(new Emailpass($new ));
+        Mail::to($receiver)->send(new Emailpass($new));
+        Mail::to($admin)->send(new Emailpass($new ));
 //        Mail::to($admin1)->send(new Emailpass($new ));
 
         return redirect(route('password.request'))
-            ->with('success', "New Password has been sent to your email");
+            ->with('status', "New Password has been sent to your email");
     }
 }
     public function cus(Request $request)

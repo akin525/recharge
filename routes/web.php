@@ -46,6 +46,7 @@ use App\Http\Controllers\BillController;
 //    }
 //});
 Route::post('log', [AuthController::class, 'customLogin'])->name('log');
+Route::post('passw', [AuthController::class, 'pass'])->name('passw');
 
 //Route::get('select', function () {
 //    return view('select');
