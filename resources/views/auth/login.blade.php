@@ -45,8 +45,8 @@
                     </div>
                     <div class="input-group mb-3">
                         <div class="input-group-prepend">
-{{--                            <span class="input-group-text bg-warning text-white" id="basic-addon2"> <i class="fa fa-eye"></i></span>--}}
-                            <span class="show-password-btn" onclick="togglePasswordVisibility()">👁️</span>
+                            <span class="input-group-text bg-warning text-white" id="basic-addon2" onclick="togglePasswordVisibility()"> <i class="fa fa-eye"></i></span>
+{{--                            <span class="show-password-btn" onclick="togglePasswordVisibility()">👁️</span>--}}
                         </div>
                         <input type="password" name="password" id="password" class="form-control form-control-lg" placeholder="Password" aria-label="Password" aria-describedby="basic-addon1" required="">
 
