@@ -46,16 +46,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="row border-top border-secondary">
-                            <div class="col-12">
-                                <div class="form-group">
-                                    <div class="p-t-20">
-                                        <button class="btn btn-success float-right" type="submit">Reset</button>
-                                    </div>
-
-                                </div>
-                            </div>
-                        </div>
+                        <button class="btn btn-success float-right" type="submit">Reset</button>
                     </form>
                 </div>
             </div>

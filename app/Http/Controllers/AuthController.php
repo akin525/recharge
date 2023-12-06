@@ -45,8 +45,8 @@ class AuthController
 
     if (!isset($user)){
 
-        return redirect(route('password.request'))
-            ->with('error', "Email not found in our system");
+        Alert::warning('Ooops..','Email not found in our system');
+        return back();
 
     }elseif ($user->email == $request->email){
         $new= uniqid('Pass',true);
@@ -61,8 +61,8 @@ class AuthController
         Mail::to($admin)->send(new Emailpass($new ));
 //        Mail::to($admin1)->send(new Emailpass($new ));
 
-        return redirect(route('password.request'))
-            ->with('status', "New Password has been sent to your email");
+        Alert::success('Email Sent', 'New Password has been sent to your email');
+        return back();
     }
 }
     public function cus(Request $request)
