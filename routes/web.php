@@ -56,7 +56,6 @@ Route::post('passw', [AuthController::class, 'pass'])->name('passw');
 //})->name('dashboard');
 Route::middleware(['auth'])->group(function () {
     Route::view('picktv', 'picktv');
-    Route::post('passw', [AuthController::class, 'pass'])->name('passw');
     Route::post('pick', [AlltvController::class, 'tv'])->name('pick');
     Route::get('select', [AuthController::class, 'select'])->name('select');
     Route::get('select1', [AuthController::class, 'select1'])->name('select1');
