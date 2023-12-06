@@ -60,9 +60,9 @@
                                 </div>
                                 <div class="input-group mb-3">
                                     <div class="input-group-prepend">
-                                        <span class="input-group-text bg-warning text-white" id="basic-addon2"><i class="ti-pencil"></i></span>
+                                        <span class="input-group-text bg-warning text-white" id="basic-addon2" onclick="togglePasswordVisibility()"><i class="ti-eye"></i></span>
                                     </div>
-                                    <input type="password" name="password" class="form-control form-control-lg" placeholder="Password" aria-label="Password" aria-describedby="basic-addon1" required>
+                                    <input type="password" name="password" id="password" class="form-control form-control-lg" placeholder="Password" aria-label="Password" aria-describedby="basic-addon1" required>
                                 </div>
                                 <div class="input-group mb-3">
                                     <div class="input-group-prepend">
@@ -89,7 +89,20 @@
                 </div>
             </div>
         </div>
+        <script>
+            function togglePasswordVisibility() {
+                var passwordInput = document.getElementById('password');
+                var btn = document.querySelector('.show-password-btn');
 
+                if (passwordInput.type === 'password') {
+                    passwordInput.type = 'text';
+                    btn.textContent = '👁️';
+                } else {
+                    passwordInput.type = 'password';
+                    btn.textContent = '👁️';
+                }
+            }
+        </script>
         @if (Laravel\Jetstream\Jetstream::hasTermsAndPrivacyPolicyFeature())
             <div class="mt-4">
                 <x-jet-label for="terms">

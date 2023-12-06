@@ -46,7 +46,7 @@
                                 </div>
                             </div>
                         </div>
-                        <button class="btn btn-success" type="submit">Reset</button>
+                        <button class="btn btn-block btn-lg btn-success" type="submit">Reset</button>
                     </form>
                 </div>
             </div>
