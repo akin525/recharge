@@ -60,7 +60,7 @@ class VertualController
 
                 $user->account_number = $number;
                 $user->account_name = $account;
-                $user->account_bank = $bank;
+                $user->bank = $bank;
                 $user->save();
 
                 Alert::success('Succeaa', 'Virtual Account Successful Created');
