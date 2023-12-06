@@ -54,7 +54,7 @@ class VertualController
             curl_close($curl);
             $data = json_decode($response, true);
             if ($data['success']==1){
-                $account = $data["data"]["account_name"];
+                $account = $data["data"]["customer_name"];
                 $number = $data["data"]["account_number"];
                 $bank = $data["data"]["bank_name"];
 

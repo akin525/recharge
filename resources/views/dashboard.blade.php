@@ -66,7 +66,7 @@
                 <div class="card-body">
                     <li  class=" btn-info">
                             @if (Auth::user()->account_number==1 && Auth::user()->account_name==1)
-                                <a href='{{route('vertual')}}' class='text-white'>Click this section to get your permament Virtual Bank Account (Transfer money to the account no to get your Rechargestation Wallet funded instantly!)</a>
+                                <a href='{{route('vertual')}}' class='btn btn-success text-white'>Click this section to get your  Virtual Bank Account</a>
                             @else
                                 <h6 class='text-white'>{{Auth::user()->account_name}}</h6>
                                 <h5 class='text-white'>Account No:{{Auth::user()->account_number}}</h5>
