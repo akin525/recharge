@@ -39,7 +39,11 @@ class VertualController
                 CURLOPT_SSL_VERIFYHOST => 0,
                 CURLOPT_SSL_VERIFYPEER => 0,
                 CURLOPT_CUSTOMREQUEST => 'POST',
-                CURLOPT_POSTFIELDS => array('account_name' => $name, 'business_short_name' => 'Recharge', 'uniqueid' => $username, 'email' => $email, 'phone' => $phone, 'webhook_url' => 'https://rechargestation.com.ng/api/run',),
+                CURLOPT_POSTFIELDS => array('account_name' => $name,
+                    'business_short_name' => 'Recharge','uniqueid' => $username,
+                    'email' => $email,'dob' => "1991-05-27",
+                    'address' => "Ikeja Lagos Nigeria",'gender' => "Male",
+                    'phone' =>'08146328645','webhook_url' => 'https://rechargestation.com.ng/api/run1'),
                 CURLOPT_HTTPHEADER => array(
                     'Authorization: mcd_key_75rq4][oyfu545eyuriup1q2yue4poxe3jfd'
                 ),

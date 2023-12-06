@@ -48,6 +48,7 @@
                             <span class="input-group-text bg-warning text-white" id="basic-addon2"><i class="ti-pencil"></i></span>
                         </div>
                         <input type="password" name="password" class="form-control form-control-lg" placeholder="Password" aria-label="Password" aria-describedby="basic-addon1" required="">
+                        <i class="fa fa-eye"></i>
                     </div>
                 </div>
             </div>
