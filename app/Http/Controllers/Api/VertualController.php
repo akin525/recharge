@@ -138,7 +138,7 @@ class VertualController
                     CURLOPT_SSL_VERIFYHOST => 0,
                     CURLOPT_SSL_VERIFYPEER => 0,
                     CURLOPT_CUSTOMREQUEST => 'POST',
-                    CURLOPT_POSTFIELDS => array('refid' =>'Yellotelecoms'.$refid, 'amount' => $amount),
+                    CURLOPT_POSTFIELDS => array('refid' =>'Recharge'.$refid, 'amount' => $amount),
 
                     CURLOPT_HTTPHEADER => array(
                         'apikey: RENO6568c029b7bc56.58727119'
