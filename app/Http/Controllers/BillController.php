@@ -187,9 +187,9 @@ class BillController extends Controller
 
                     }elseif ($data['success']==0) {
                         $success = 0;
-                        $zo = $user->wallet + $amount;
-                        $user->wallet = $zo;
-                        $user->save();
+//                        $zo = $user->wallet + $amount;
+//                        $user->wallet = $zo;
+//                        $user->save();
 
                         $name = $product->plan;
                         $am = "NGN $amount Was Refunded To Your Wallet";
