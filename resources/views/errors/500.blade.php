@@ -2,7 +2,7 @@
 <meta name="keywords" content="">
 <meta name="description" content="">
 <meta name="author" content="">
-<link rel="icon" href="https://mobile.primedata.com.ng/images/bn.jpeg" type="image/png" />
+{{--<link rel="icon" href="https://mobile.primedata.com.ng/images/bn.jpeg" type="image/png" />--}}
 <!-- Fonts -->
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap">
 
