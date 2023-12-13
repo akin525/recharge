@@ -1,4 +1,4 @@
-<title>PrimeData Nig | Data Refill, Airtime, Cable TV, Electricity Subscription</title>
+<title>Rechargestation Nig | Data Refill, Airtime, Cable TV, Electricity Subscription</title>
 <meta name="keywords" content="">
 <meta name="description" content="">
 <meta name="author" content="">
