@@ -88,9 +88,9 @@ class CreateNewUser implements CreatesNewUsers
             return tap(User::create([
                 'name' => $input['name'],
                 'username'=>$input['username'],
-                'account_number'=$number,
-                'account_name'=$account,
-                'bank'=$bank,
+                'account_number'=>$number,
+                'account_name'=>$account,
+                'bank'=>$bank,
                 'phone'=>$input['number'],
                 'email' => $input['email'],
                 'password' => Hash::make($input['password']),
