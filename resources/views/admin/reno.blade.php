@@ -35,14 +35,13 @@
                                 <link rel="stylesheet" href="{{asset('style.css')}}">
                                 <!--Only for demo purpose - no need to add.-->
                                 <link rel="stylesheet" href="{{asset('demo.css')}}"/>
-                                <td> {{$seller->network}} </td>
-                                <td> {{$seller->plan}}</td>
-                                <td> {{$seller->ramount}}</td>
+                                <td> {{$seller['network']}} </td>
+                                <td> {{$seller->['plan']}}</td>
+                                <td> {{$seller->['ramount']}}</td>
                             </tr>
                         @endforeach
                         </tbody>
                     </table>
-                    {{$product->links()}}
 
                 </div>
             </div>
