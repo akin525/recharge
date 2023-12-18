@@ -36,8 +36,8 @@
                                 <!--Only for demo purpose - no need to add.-->
                                 <link rel="stylesheet" href="{{asset('demo.css')}}"/>
                                 <td> {{$seller['network']}} </td>
-                                <td> {{$seller->['plan']}}</td>
-                                <td> {{$seller->['ramount']}}</td>
+                                <td> {{$seller['plan']}}</td>
+                                <td> {{$seller['ramount']}}</td>
                             </tr>
                         @endforeach
                         </tbody>
