@@ -149,7 +149,7 @@ function checkrenoproduct()
 
     curl_close($curl);
     $product=json_decode($response, true);
-
+return $product;
     return view('admin/reno', compact('product'));
 
 }
