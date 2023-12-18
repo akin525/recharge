@@ -126,6 +126,32 @@ public function pair(Request $request)
     return redirect('admin/air')->with('status', 'Server update successfully');
 
 }
+function checkrenoproduct()
+{
+
+    $curl = curl_init();
+
+    curl_setopt_array($curl, array(
+        CURLOPT_URL => 'http://renomobilemoney.com/api/listdata',
+        CURLOPT_RETURNTRANSFER => true,
+        CURLOPT_ENCODING => '',
+        CURLOPT_MAXREDIRS => 10,
+        CURLOPT_TIMEOUT => 0,
+        CURLOPT_FOLLOWLOCATION => true,
+        CURLOPT_HTTP_VERSION => CURL_HTTP_VERSION_1_1,
+        CURLOPT_CUSTOMREQUEST => 'GET',
+        CURLOPT_HTTPHEADER => array(
+            'apikey: RENO6568c029b7bc56.58727119'
+        ),
+    ));
+
+    $response = curl_exec($curl);
+
+    curl_close($curl);
+    return $response;
+    $data=json_decode($response, true);
+
+}
 
 
 }

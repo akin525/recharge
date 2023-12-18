@@ -146,8 +146,7 @@ Route::middleware(['auth'])->group(function () {
     Route::get('admin/bills', [TransactionController::class, 'bill'])->name('admin/bills');
     Route::get('admin/finddeposite', [TransactionController::class, 'index'])->name('admin/finddeposite');
     Route::post('admin/depo', [TransactionController::class, 'finduser'])->name('admin/depo');
-
-
+    Route::get('admin/reno', [ProductController::class, 'checkrenoproduct'])->name('admin/reno');
 });
 
 Route::get('admin/api', [HonorApi::class, 'api'])->name('admin/api');
