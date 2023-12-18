@@ -148,8 +148,9 @@ function checkrenoproduct()
     $response = curl_exec($curl);
 
     curl_close($curl);
-    return $response;
-    $data=json_decode($response, true);
+    $product=json_decode($response, true);
+
+    return view('admin/reno', compact('product'));
 
 }
 
