@@ -170,6 +170,7 @@ class BillController extends Controller
                         $name = $product->plan;
                         $am = "$product->plan  was successful delivered to";
                         $ph = $request->number;
+                        $msg=$am.' ' .$ph;
 
 
                         $receiver = $user->email;
@@ -179,9 +180,10 @@ class BillController extends Controller
                         Mail::to($admin)->send(new Emailtrans($bo));
 //                        Mail::to($admin2)->send(new Emailtrans($bo));
 
-                        Alert::success('Success', $am.' '.$ph);
-
-                        return redirect(route('dashboard'));
+                        return response()->json([
+                            'status' => 'success',
+                            'message' => $msg,
+                        ]);
 
                     }elseif ($data['success']==0) {
                         $success = 0;
