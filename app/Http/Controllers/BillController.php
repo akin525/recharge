@@ -68,7 +68,7 @@ class BillController extends Controller
 //                $wallet = wallet::where('username', $user->username)->first();
 
 
-                $gt = $user->wallet - $request->amount;
+                $gt = $user->wallet - $product->tamount;
 
 
                 $user->wallet = $gt;
@@ -194,8 +194,12 @@ class BillController extends Controller
                         $name = $product->plan;
                         $am = "NGN $amount Was Refunded To Your Wallet";
                         $ph = ", Transaction fail";
-                        Alert::error('Error', $am.' '.$ph);
-                        return redirect(route('dashboard'));
+                        $msg=$am.' ' .$ph;
+
+                        return response()->json([
+                            'status' => 'fail',
+                            'message' => $msg,
+                        ]);
                     }
 
                 }
