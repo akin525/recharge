@@ -140,7 +140,7 @@
                                         Swal.fire({
                                             icon: 'info',
                                             title: 'Pending',
-                                            text: response
+                                            text: response.message
                                         });
                                         // Handle any other response status
                                     }
