@@ -143,7 +143,7 @@ class BillController extends Controller
 
                     $data = json_decode($response, true);
 //return $data;
-                    return response()->json( $data, Response::HTTP_CONFLICT);
+//                    return response()->json( $data, Response::HTTP_CONFLICT);
 
                     if ($data['success']==1) {
 
