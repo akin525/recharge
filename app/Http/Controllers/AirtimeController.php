@@ -53,7 +53,8 @@ class AirtimeController
 
                 $user->wallet = $gt;
                 $user->save();
-
+                $per=2/100;
+                $comission=$per*$request->amount;
                 $bo = bo::create([
                     'username' => $user->username,
                     'plan' => 'Airtime',
@@ -97,7 +98,9 @@ class AirtimeController
                         'server_res'=>$response,
                         'result'=>1,
                     ]);
-
+                    $com=$user->wallet-+$comission;
+                    $user->wallet=$com;
+                    $user->save();
 //                    $name = $bt->plan;
                     $am = "NGN $request->amount  Airtime Purchase Was Successful To";
                     $ph = $request->number;
@@ -105,11 +108,14 @@ class AirtimeController
                     $receiver = $user->email;
                     $admin = 'info@rechargestation.com.ng';
 
+                    $parise=$comission."₦ Commission Is added to your wallet balance";
+                    $receiver = $user->email;
+                    $msg=$am.' ' .$ph.' & '.$parise;
                     Mail::to($receiver)->send(new Emailtrans($bo));
                     Mail::to($admin)->send(new Emailtrans($bo));
                     return response()->json([
                         'status' => 'success',
-                        'message' => $am.' ' .$ph,
+                        'message' => $msg,
                     ]);
 
                 } elseif ($success == 0) {
