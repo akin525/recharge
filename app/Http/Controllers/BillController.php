@@ -74,11 +74,11 @@ class BillController extends Controller
                 $user->wallet = $gt;
                 $user->save();
                 $product['number']=$request->number;
-                $product['refid']=$request->id;
+                $product['refid']=$request->refid;
 //return $product;
                 $object = json_decode($product);
                 $object->number = $request->number;
-                $object->id = $request->id;
+                $object->id = $request->refid;
                 $json = json_encode($object);
 
                 $daterserver = new DataserverController();
