@@ -129,10 +129,6 @@ class BillController extends Controller
                         return redirect(route('dashboard'));
 
                     } elseif ($data['code'] == '300') {
-                        $success = 0;
-                        $zo = $wallet->balance + $request->amount;
-                        $wallet->balance = $zo;
-                        $wallet->save();
 
                         $name = $product->plan;
                         $am = "NGN $request->amount Was Refunded To Your Wallet";
@@ -147,6 +143,8 @@ class BillController extends Controller
 
                     $data = json_decode($response, true);
 //return $data;
+                    return response()->json( $data, Response::HTTP_CONFLICT);
+
                     if ($data['success']==1) {
 
 //                    echo $success;
