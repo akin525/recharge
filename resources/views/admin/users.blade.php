@@ -63,7 +63,7 @@
                             @foreach($users as $user )
                                 <tr>
                                     <td>
-                                            <img width="50" src="{{asset("samso.png")}}" alt="" class="rounded-circle thumb-sm mr-1"> {{$user->username}}
+                                            <img width="50" src="{{asset("images/logo.jpeg")}}" alt="" class="rounded-circle thumb-sm mr-1"> {{$user->username}}
                                     </td>
 {{--                                    <td>₦{{$user->balance}}</td>--}}
                                     <td>{{$user->email}}</td>
