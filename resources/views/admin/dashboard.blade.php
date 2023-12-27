@@ -172,16 +172,16 @@
 
         <div class="row">
             <!-- Column -->
-            <div class="col-md-3 col-lg-6">
-                <div class="card card-hover">
-                    <div class="box bg-cyan text-center">
-                        <h1 class="font-light text-white"><i class="mdi mdi-wallet"></i></h1>
+{{--            <div class="col-md-3 col-lg-6">--}}
+{{--                <div class="card card-hover">--}}
+{{--                    <div class="box bg-cyan text-center">--}}
+{{--                        <h1 class="font-light text-white"><i class="mdi mdi-wallet"></i></h1>--}}
 
-                        <h6 class="text-white">₦{{number_format(intval($totalprofit *1), 2)}}</h6>
-                        <h6 class="text-white">Total Profit</h6>
-                    </div>
-                </div>
-            </div>
+{{--                        <h6 class="text-white">₦{{number_format(intval($totalprofit *1), 2)}}</h6>--}}
+{{--                        <h6 class="text-white">Total Profit</h6>--}}
+{{--                    </div>--}}
+{{--                </div>--}}
+{{--            </div>--}}
             <!-- Column -->
             <div class="col-md-3 col-lg-6">
                 <div class="card card-hover">
