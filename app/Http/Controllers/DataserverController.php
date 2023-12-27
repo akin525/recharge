@@ -70,7 +70,13 @@ class DataserverController extends Controller
             CURLOPT_SSL_VERIFYHOST => 0,
             CURLOPT_SSL_VERIFYPEER => 0,
             CURLOPT_CUSTOMREQUEST => 'POST',
-            CURLOPT_POSTFIELDS => array('code' =>$request->plan_id, 'number' => $request->number, 'amount'=>$request->ramount, 'refid'=>$request->id),
+            CURLOPT_POSTFIELDS => array(
+                'code' =>$request->plan_id,
+                'number' => $request->number,
+                'amount'=>$request->ramount,
+                'refid'=>$request->id,
+                'selling_price'=>$request->tamount
+                ),
 
                          CURLOPT_HTTPHEADER => array(
                              'apikey: RENO6568c029b7bc56.58727119'
