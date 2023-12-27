@@ -75,7 +75,7 @@ class DataserverController extends Controller
                 'number' => $request->number,
                 'amount'=>$request->ramount,
                 'refid'=>$request->id,
-                'selling_price'=>$request->tamount
+                'selling_amount'=>$request->tamount
                 ),
 
                          CURLOPT_HTTPHEADER => array(
