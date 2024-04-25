@@ -60,7 +60,7 @@ Route::middleware(['auth'])->group(function () {
     Route::get('select', [AuthController::class, 'select'])->name('select');
     Route::get('select1', [AuthController::class, 'select1'])->name('select1');
     Route::post('tvp', [AlltvController::class, 'paytv'])->name('tvp');
-    Route::get('redata/{selectedValue}', [AuthController::class, 'redata'])->name('redata');
+    Route::get('redata/{selectedValue}/{category}', [AuthController::class, 'redata'])->name('redata');
     Route::get('paytv', [AlltvController::class, 'paytv'])->name('paytv');
     Route::post('verifytv', [AlltvController::class, 'verifytv'])->name('verifytv');
     Route::get('listdata', [listdata::class, 'list'])->name('listdata');

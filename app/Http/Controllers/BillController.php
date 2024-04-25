@@ -6,6 +6,7 @@ use App\Models\big;
 use App\Models\bo;
 use App\Models\data;
 use App\Models\deposit;
+use App\Models\Mcd;
 use App\Models\profit;
 use App\Models\server;
 use App\Models\setting;
@@ -34,7 +35,7 @@ class BillController extends Controller
             if ($serve->name == 'honorworld') {
                 $product = big::where('id', $request->productid)->first();
             } elseif ($serve->name == 'mcd') {
-                $product = data::where('id', $request->productid)->first();
+                $product = Mcd::where('id', $request->productid)->first();
             }
 //return $product;
             if ($user->apikey == '') {
