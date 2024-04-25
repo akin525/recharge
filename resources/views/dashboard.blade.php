@@ -6,7 +6,7 @@
 
 <div class="alert alert-success" role="alert">
     <h4 class="alert-heading">Important Notification!</h4>
-    <p><b>{{$me->message}}</b></p>
+    <p><b>{!! $me->message !!}</b></p>
     <hr>
     <p class="mb-0">Alway read & check notice after logged in</p>
 </div>
