@@ -1,4 +1,5 @@
 @include('admin.layouts.sidebar')
+<link rel="stylesheet" href="{{ mix('css/app.css') }}">
 
     <div class="row">
         <div class="loading-overlay" id="loadingSpinner" style="display: none;">
