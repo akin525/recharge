@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\admin\HonorApi;
 use App\Http\Controllers\admin\CandCController;
+use App\Http\Controllers\admin\InsertController;
 use App\Http\Controllers\admin\McdController;
 use App\Http\Controllers\admin\ProductController;
 use App\Http\Controllers\admin\TransactionController;
@@ -147,6 +148,17 @@ Route::middleware(['auth'])->group(function () {
     Route::get('admin/finddeposite', [TransactionController::class, 'index'])->name('admin/finddeposite');
     Route::post('admin/depo', [TransactionController::class, 'finduser'])->name('admin/depo');
     Route::get('admin/reno', [ProductController::class, 'checkrenoproduct'])->name('admin/reno');
+
+    Route::get('admin/switchserver', [InsertController::class, 'indexserver'])->name('admin/switchserver');
+    Route::post('admin/switchserver', [InsertController::class, 'createserevr'])->name('admin/switchserver');
+    Route::get('admin/switchserver1/{id}', [InsertController::class, 'switchserver'])->name('admin/switchserver1');
+
+    Route::get('admin/mcdproduct', [ProductController::class,  'indexmcd'])->name('admin/mcdproduct');
+    Route::get('admin/pdm/{id}', [ProductController::class, 'onmcd'])->name('admin/pdm');
+    Route::post('admin/dom', [ProductController::class, 'editmcd'])->name('admin/dom');
+
+
+
 });
 
 Route::get('admin/api', [HonorApi::class, 'api'])->name('admin/api');
