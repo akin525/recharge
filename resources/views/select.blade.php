@@ -1,4 +1,61 @@
 @include('layouts.sidebar')
+<style>
+    .subscribe {
+        position: relative;
+        padding: 20px;
+        background-color: #FFF;
+        border-radius: 4px;
+        color: #333;
+        box-shadow: 0px 0px 60px 5px rgba(0, 0, 0, 0.4);
+    }
+
+    .subscribe:after {
+        position: absolute;
+        content: "";
+        right: -10px;
+        bottom: 18px;
+        width: 0;
+        height: 0;
+        border-left: 0px solid transparent;
+        border-right: 10px solid transparent;
+        border-bottom: 10px solid #208b37;
+    }
+
+    .subscribe p {
+        text-align: center;
+        font-size: 20px;
+        font-weight: bold;
+        letter-spacing: 4px;
+        line-height: 28px;
+    }
+
+
+
+    .subscribe .submit-btn {
+        position: absolute;
+        border-radius: 30px;
+        border-bottom-right-radius: 0;
+        border-top-right-radius: 0;
+        background-color: #208b37;
+        color: #FFF;
+        padding: 12px 25px;
+        display: inline-block;
+        font-size: 12px;
+        font-weight: bold;
+        letter-spacing: 5px;
+        right: -10px;
+        bottom: -20px;
+        cursor: pointer;
+        transition: all .25s ease;
+        box-shadow: -5px 6px 20px 0px rgba(26, 26, 26, 0.4);
+    }
+
+    .subscribe .submit-btn:hover {
+        background-color: #208b37;
+        box-shadow: -5px 6px 20px 0px rgba(88, 88, 88, 0.569);
+    }
+</style>
+
 <div class="row">
     <!--    <div class="card">-->
     <div class="card-body">
@@ -7,7 +64,7 @@
                     Select Network</h3></center>
         </div>
         <center>
-            <div class="btn-controls">
+            <div class="btn-controls subscribe">
                 <form id="dataForm">
                     @csrf
 

@@ -71,10 +71,10 @@ class DataserverController extends Controller
             CURLOPT_SSL_VERIFYPEER => 0,
             CURLOPT_CUSTOMREQUEST => 'POST',
             CURLOPT_POSTFIELDS => array(
-                'code' =>$request->plan_id,
+                'code' =>$request->cat_id,
                 'number' => $request->number,
                 'amount'=>$request->ramount,
-                'refid'=>$request->id,
+                'refid'=>$request->refid,
                 'selling_amount'=>$request->tamount
                 ),
 
